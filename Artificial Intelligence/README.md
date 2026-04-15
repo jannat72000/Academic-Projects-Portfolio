@@ -1,5 +1,5 @@
 ## 📌 Project Overview
-This project was developed for the **Artificial Intelligence (CSE366)** course at **East West University**. The goal is to predict the survival probability of Titanic passengers based on attributes such as age, gender, and ticket class using classic Machine Learning algorithms.
+This project was developed for the **Artificial Intelligence** course. The goal is to predict the survival probability of Titanic passengers based on attributes such as age, gender, and ticket class using classic Machine Learning algorithms.
 
 ## 📊 Dataset Insights
 * **Source:** Collected from Kaggle.
