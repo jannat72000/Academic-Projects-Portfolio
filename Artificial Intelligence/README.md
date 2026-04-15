@@ -5,7 +5,7 @@ This project was developed for the **Artificial Intelligence (CSE366)** course a
 * **Source:** Collected from Kaggle.
 * **Size:** 418 rows and 12 columns (Testing set) and 891 rows (Training set).
 * **Target Variable:** `Survived` (0 = No, 1 = Yes).
-* **Key Features:** Pclass, Sex, Age, Fare, and Embarked.
+* **Key Features:** Pclass, Gender, Age, Fare, and Embarked.
 
 ### Data Preprocessing
 * **Missing Values:** Imputed missing 'Age' values using the **Median** and missing 'Fare' values using the **Mode**.
@@ -18,7 +18,7 @@ We compared two fundamental AI approaches for binary classification:
 ### 1. Naive Bayesian Classifier
 * A generative learning model based on **Bayes' Theorem**.
 * Used the **Probability Density Function (PDF)** for continuous features (Age, Fare).
-* Calculated likelihood for discrete features (Sex, Pclass, Embarked).
+* Calculated likelihood for discrete features (Gender, Pclass, Embarked).
 
 ### 2. Single Layer Perceptron (SLP)
 * A threshold-based artificial neural network.
