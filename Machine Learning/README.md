@@ -6,23 +6,29 @@ This project performs a **comparative evaluation of multiple classification algo
 - 👥 Total Samples: 1309 passengers
 - 🔢 Total Features: 12
 
+### 📂 Dataset Distribution
+To ensure reliable training and evaluation, the dataset was split into training and testing sets:
+
+- 🧠 Training Set: 891 passengers (used for model learning and pattern recognition)
+- 🧪 Test Set: 418 passengers (used for evaluating performance on unseen data)
+
 ---
 
 ## 🧹 Data Preprocessing
 - Missing value handling:
-  - `Age`, `Fare` → filled with mean
-  - `Embarked` → filled with 'C'
-- Removed unnecessary columns:
+  - `Age`, `Fare` → filled with mean values  
+  - `Embarked` → filled with most frequent value ('C')
+- Removed unnecessary features:
   - `PassengerId`, `Name`, `Ticket`, `Cabin`
-- Steps performed:
-  - Data Cleaning  
-  - Data Integration  
-  - Data Transformation  
+- Data preprocessing steps included:
+  - Data cleaning  
+  - Data integration  
+  - Data transformation  
 
 ---
 
 ## 🔍 Feature Selection
-Used **MRMR (Minimum Redundancy Maximum Relevance)** to select the most important features.
+Applied **MRMR (Minimum Redundancy Maximum Relevance)** for selecting the most important features.
 
 ### ✅ Selected Features:
 - Age  
@@ -34,15 +40,17 @@ Used **MRMR (Minimum Redundancy Maximum Relevance)** to select the most importan
 ---
 
 ## 📊 Data Analysis & Visualization
-- 📈 Correlation Heatmap
-- 👩‍🦰 Gender-based survival analysis
-- 🎟️ Passenger class analysis
-- 🚢 Embarkation port analysis
-- 🧭 t-SNE used for dimensionality reduction & visualization
+- 📈 Correlation heatmap analysis  
+- 👩 Gender-based survival distribution  
+- 🎟️ Passenger class (Pclass) survival analysis  
+- 🚢 Embarkation port survival analysis  
+- 🧭 Dimensionality reduction using **t-SNE** for visualization  
 
 ---
 
 ## 🤖 Machine Learning Models Used
+The following classification algorithms were implemented and compared:
+
 - Logistic Regression  
 - Random Forest  
 - Support Vector Machine (SVM)  
@@ -54,6 +62,8 @@ Used **MRMR (Minimum Redundancy Maximum Relevance)** to select the most importan
 ---
 
 ## ⚙️ Model Evaluation Metrics
+The models were evaluated using:
+
 - Accuracy  
 - Precision  
 - Recall  
@@ -62,38 +72,37 @@ Used **MRMR (Minimum Redundancy Maximum Relevance)** to select the most importan
 
 ---
 
-## 📈 Model Performance
+## 📈 Model Performance Comparison
 
-| Algorithm           | Accuracy | Precision | Recall | F1 Score |
-|--------------------|----------|----------|--------|----------|
-| Logistic Regression| 0.88     | 0.86     | 0.83   | 0.83     |
-| SVM                | 0.87     | 0.80     | 0.86   | 0.83     |
-| AdaBoost           | 0.86     | 0.86     | 0.80   | 0.83     |
-| Random Forest      | 0.83     | 0.79     | 0.79   | 0.79     |
-| KNN                | 0.80     | 0.80     | 0.68   | 0.74     |
+| Algorithm            | Accuracy | Precision | Recall | F1 Score |
+|---------------------|----------|-----------|--------|----------|
+| Logistic Regression | 0.88     | 0.86      | 0.83   | 0.83     |
+| SVM                 | 0.87     | 0.80      | 0.86   | 0.83     |
+| AdaBoost            | 0.86     | 0.86      | 0.80   | 0.83     |
+| Random Forest       | 0.83     | 0.79      | 0.79   | 0.79     |
+| KNN                 | 0.80     | 0.80      | 0.68   | 0.74     |
 
 ---
 
 ## 🧠 Key Insights
-- 👩 Female passengers had significantly higher survival rates than males
-- 🎟️ 1st class passengers had the highest survival probability
-- ⚓ Passengers from Cherbourg (C) showed better survival rates
-- 📌 Feature selection improved model performance and reduced complexity
+- 👩 Female passengers had significantly higher survival rates than male passengers  
+- 🎟️ First-class passengers had the highest survival probability  
+- ⚓ Passengers from Cherbourg (C) showed relatively higher survival rates  
+- 📌 Feature selection improved model performance and reduced complexity  
 
 ---
 
-## 🏆 Best Model
+## 🏆 Best Performing Model
 👉 **Logistic Regression achieved the highest accuracy (~88%)**
 
 ---
 
 ## 📉 Limitations
-- Dataset contains missing and limited features
-- Class imbalance may affect performance
-- More feature engineering could improve results
+- Dataset contains missing and incomplete information  
+- Class imbalance may affect model performance  
+- Additional feature engineering could further improve results  
 
 ---
 
 ## ✅ Conclusion
-This project shows that **proper data preprocessing, feature selection, and model comparison** are crucial for improving machine learning performance. Among all models, **Logistic Regression performed best for this dataset**.
-
+This project demonstrates that **effective preprocessing, feature selection, and model comparison** significantly improve machine learning performance. Among all tested models, **Logistic Regression performed the best for this dataset**.
