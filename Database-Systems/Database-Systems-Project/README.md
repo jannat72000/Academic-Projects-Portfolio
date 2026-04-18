@@ -1,4 +1,4 @@
-# CSE302: Database Systems CProject
+# CSE302: Database Systems Project
 Academic & Project Performance Management System (Oracle APEX)
 
 ## Project Overview
