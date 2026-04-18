@@ -2,7 +2,7 @@
 Academic & Project Performance Management System (Oracle APEX)
 
 ## Project Overview
-This project is a web-based database application developed using Oracle APEX for the course CSE302. The application manages student academic records, project group allocations, marks distribution, and course outcomes. It bridges the gap between students, instructors, and supervisors by providing a centralized platform for academic data management.
+This project is a web-based database application developed using Oracle APEX. The application manages student academic records, project group allocations, marks distribution, and course outcomes. It bridges the gap between students, instructors, and supervisors by providing a centralized platform for academic data management.
 
 Platform: Oracle APEX  
 Database: Oracle SQL  
