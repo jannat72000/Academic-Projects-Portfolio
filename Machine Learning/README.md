@@ -32,7 +32,7 @@ Applied **MRMR (Minimum Redundancy Maximum Relevance)** for selecting the most i
 
 ### ✅ Selected Features:
 - Age  
-- Sex  
+- Gender  
 - Embarked  
 - SibSp  
 - Pclass  
